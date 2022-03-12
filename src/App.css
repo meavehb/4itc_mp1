@@ -2,37 +2,127 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.sec-headers {
+  font-family: 'Century Gothic', sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: right;
+  font-variant: small-caps;
+  margin: 25px;
+  padding: 15px;
+  color: #26466D;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.sec-headers > img {
+  height: 25px;
+  margin-right: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+hr.line {
+  border-top: 2px solid #26466D;
+}
+
+body {
+  font-family: 'Arvo', serif;
+  font-size: 18px;
+}
+
+h3, h4 {
+  font-family: 'Century Gothic', sans-serif;
+}
+
+.grid-table {
+  display: grid;
+  grid-template-areas: "250px 350px";
+  grid-gap: 15px;
+  margin-left: 90px;
+}
+
+.about {
+  padding: 40px;
+  background-color: #3D5B43;
+  color: #f0f8ff;
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.about-pic {
+  width: 250px;
+  margin: 20px 0px 0px 80px;
+  border-radius: 150px;
+  float: left;
+}
+
+.about-info {
+  width: 850px;
+  float: right;
+}
+
+.educ {
+  padding: 60px;
+  background-image: url("./images/bg1.png");
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+
+.work {
+  padding: 60px;
+  background-color: #E0EEE0;
+}
+
+.proj {
+  padding: 60px;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 40px;
+  background-color: #B2D0B4;
 }
 
-.App-link {
-  color: #61dafb;
+.proj-card {
+  flex-basis: 400px;
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 13px;
+  padding-bottom: 20px;
+  background-color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.proj-card > img {
+  width: 100%;
+  height: auto;
+  align-self: center;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+.proj-card > h3 {
+  font-weight: 700;
+  font-size: 18px;
+  text-align: center;
+}
+
+.proj-info {
+    display: flex;
+    align-items: center;
+}
+
+.proj-info > p {
+  margin-block: 3px;
+  font-size: 14px;
+  color: #2b283a;
+}
+
+.cert-semi {
+  padding: 60px;
+}
+
+.footer {
+  padding: 25px;
+  background-color: #CCCCFF;
+  font-family: 'Century Gothic', sans-serif;
+  text-align: center;
+  font-size: small;
 }
